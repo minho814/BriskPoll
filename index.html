@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Socket.IO chat</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+  </head>
+  <body>
+    <div class="top">
+      <h1>Today's Topic: <span id="topic"></span>
+      <h2><span id="userCount">0</span> user(s) online</h2>
+      <hr>
+      <div class=row>
+        <p class="column left">Yes Votes: <span id="yesvote"></span></p>
+        <p class="column center">Your Vote: <span id="vote"></span></p>
+        <p class="column right">No Votes: <span id="novote"></span></p>
+      </div>
+      <hr>
+    </div>
+    <ul id="messages"></ul>
+    <form onkeypress="return event.keyCode != 13;" action = "">
+      <button class="blue">Yes</button>
+      <input id="m" autocomplete="off" />
+      <button class="red">No</button>
+    </form>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="/js/script.js"> </script>
+  </body>
+</html>
+
