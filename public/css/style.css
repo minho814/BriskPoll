@@ -1,14 +1,15 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font: 13px Helvetica, Arial; }
-h1 { text-align: center; }
-h2 { font: 12px Courier, Arial; text-align: center; }
+h1 { font: 20px Verdana; text-align: center; font-weight: bold; }
+h2 { font: 18px Verdana; text-align: center; }
+h3 { font: 12px Courier, Arial; text-align: center; }
 form { background: #000; padding: 3px; position: fixed; bottom: 0; width: 100%; height: 39px; }
 form input { border: 0; padding: 10px; width: 71%; margin-left: 5%; margin-right: 5%; }
 button { width: 9%; border: none; padding: 10px; 
          moz-border-radius: 10px; -webkit-border-radius: 10px; }
 p { font: 20px Arial; }
 
-.top { height: 90px; position: fixed;}
+.top { height: 106px; position: fixed;}
 .row { display: table; width: 100%; table-layout: fixed; border-spacing: 10px; }
 .column { display: table-cell; }
 .left { color: blue; text-align: left; } 
@@ -18,7 +19,7 @@ p { font: 20px Arial; }
 .red { background: rgb(240, 150, 150); }
 .blue { background: rgb(150, 150, 240); }
 
-#messages { list-style-type: none; position: fixed; margin-top: 90px; max-height: calc(100% - 129px);  
+#messages { list-style-type: none; position: fixed; margin-top: 106px; max-height: calc(100% - 145px);  
             padding: 0; width: 100%; overflow-y: auto; }
 #messages li { padding: 5px 10px; }
 #messages .redvote { background: rgb(240, 150, 150);  text-align: right; }
