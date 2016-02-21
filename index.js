@@ -16,17 +16,13 @@ var questions = ["Should abortion be legal?",
                  "Is sexual orientation determined at birth?", 
                  "Are cell phones safe?", 
                  "Should churches remain tax-exempt?", 
-                 "Is human activity a substantial cause of global climate change?", 
                  "Was Bill Clinton a good president?", 
                  "Is a college education worth it?", 
                  "Should adults have the right to carry a concealed handgun?", 
-                 "Does lowering the federal corporate income tax rate create jobs?", 
                  "Should the United States maintain its embargo against Cuba?", 
                  "Should the death penalty be allowed?", 
                  "Should the drinking age be lowered from 21 to a younger age?", 
-                 "Should the United States Continue Its Use of Drone Strikes Abroad?", 
                  "Should euthanasia or physician-assisted suicide be legal?", 
-                 "Should felons who have completed their sentence be allowed to vote?", 
                  "Should gay marriage be legal?", 
                  "Should the United States return to a gold standard?", 
                  "Is golf a sport?"];
@@ -35,7 +31,8 @@ var topic = questions[topicIndex];
 app.use(express.static('public'));
 
 app.get('/', function(req, res){
-  res.sendFile('/Users/minho814/Desktop/CompSci/ChatApp/index.html');
+  res.redirect('/html/index.html');
+  //res.sendFile('/Users/minho814/Desktop/CompSci/ChatApp/index.html');
 });
 
 // upon user login
