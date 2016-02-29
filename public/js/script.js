@@ -54,9 +54,9 @@ $(document).ready(function() {
   });
 
   // Response to user click of "Yes"
-  socket.on('blue press', function(msg, who){
+  socket.on('blue press', function(msg, who, changeStatus){
     if (who == 'all') {
-      if (change) {
+      if (changeStatus) {
         $('#messages').append($('<li class = "bluevote">').text('Change from No to Yes: ' + msg));
       }
       else {
